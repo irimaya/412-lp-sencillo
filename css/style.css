@@ -2,83 +2,80 @@
 
 /* Reset */
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* Main Styling */
+html,
 body {
-	font-family: 'Roboto', sans-serif;
-	line-height: 1.5;
+  font-family: "Roboto", sans-serif;
   color: rgba(255, 255, 255, .7);
 }
 
 p {
-	font-size: 1rem;
-	margin: 10px 0;
-	line-height: 1.7em;
-}
-
-a {
-	text-decoration: none;
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.7em;
 }
 
 /* Utility Classes */
 .container {
-	max-width: 1100px;
-	margin: 0 auto;
-	padding: 0 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 .large {
-	font-size: 20px;
+  font-size: 20px;
 }
+
 .small {
-	font-size: 12px;
+  font-size: 12px;
 }
 
 .display-1 {
-	font-size: 4rem;
+  font-size: 4rem;
 }
 
 .btn {
-	background: #096C00;
+  background: #096c00;
   color: #fff;
   border: none;
-  display: inline-block;
-	font-size: 15px;
-	padding: 12px 23px;
-	cursor: pointer;
-	font-weight: bold;
-	letter-spacing: 1px;
-	border-radius: 4px;
+  padding: 12px 23px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 4px;
 }
 
 .btn:hover {
-	color: #71ae6b;
+  color: #71ae6b;
 }
-
 
 form input {
   width: 300px;
-	padding: 7px 12px;
-	font-size: 1rem;
-	line-height: 1.5;
-  color: #fff;
+  padding: 7px 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, .7);
   background: transparent;
-	border: 1px solid #ced4da;
-	border-radius: 4px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
 }
 
 /* Main */
 main {
-	background: url('/images/background.jpg') no-repeat center center/cover;
+  background: url('/images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  
 }
 
 main h1 {
@@ -96,9 +93,8 @@ main p {
   padding-right: 10px;
 }
 
-
-/* Responsive */
-@media (max-width: 768px) {
+/* REsponsive */
+@media(max-width: 768px) {
   main p {
     width: 100%;
   }
